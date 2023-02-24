@@ -14,13 +14,14 @@ public class DriverP {
 		do {
 			System.out.println("Hola, bienvenido a nuestra calculadora, que deseas realizar?");
 			System.out.println("1. Pasar de decimal a hexadecimal");
-			System.out.println("1. Pasar de hexadecimal a decimal");
+			System.out.println("2. Pasar de hexadecimal a decimal");
 			opc = Integer.parseInt(scanner.nextLine());
 			
 			switch (opc) {
 			case  1: {
 				System.out.println("Ingresa el numero en decimal: ");
 				num = scanner.nextLine();
+				divDH(num);
 			}break;
 			
 			case 2: {
@@ -33,6 +34,12 @@ public class DriverP {
 	}
 	
 	public static void divDH(String num) {
+		String[] decimal = num.split("");
+        for (String decimales : decimal) {
+        	switch (decimales) {
+        	
+        	}
+        }
 	}
 
 }
