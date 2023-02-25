@@ -27,7 +27,10 @@ public class DriverP {
 			}break;
 			
 			case 2: {
-				
+				System.out.println("Ingresa el numero en hexadecimal: ");
+    			String hexNum = scanner.nextLine();
+				int decimalNum = HtoD.converter(hexNum);
+    			System.out.println("El numero en decimal es: " + decimalNum);
 			}break;
 			}
 			
