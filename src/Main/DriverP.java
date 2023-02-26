@@ -5,8 +5,7 @@ import java.util.Stack;
 
 public class DriverP {
 	
-	static int num = 0;
-	Stack<String> DtoH = new Stack<>();
+	static String num;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -22,8 +21,8 @@ public class DriverP {
 			switch (opc) {
 			case  1: {
 				System.out.println("Ingresa el numero en decimal: ");
-				num = Integer.parseInt(scanner.nextLine());
-				divDH(num, null);
+				num = scanner.nextLine();
+				DtoH.dividir(num);
 			}break;
 			
 			case 2: {
@@ -38,26 +37,4 @@ public class DriverP {
 			
 	}
 	
-	public static void divDH(int num, String DtoH) {
-		int decimal = num;
-		int cociente = 0;
-		int restante = 0;
-		if (decimal >= 16) {
-			cociente = (num / 16);
-			restante = ((cociente * 16)- decimal);
-			System.out.println(cociente + " " + restante);
-			
-		}
-	}
-	
-	public static void convertir(String num) {
-		String[] decimal = num.split(" ");
-        for (String decimales : decimal) {
-        	switch (decimales) {
-        	case "10":
-        		break;
-        	}
-        }
-	}
-
 }
